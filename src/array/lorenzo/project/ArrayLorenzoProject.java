@@ -17,9 +17,9 @@ public class ArrayLorenzoProject {
     public static void main(String[] args) {
         
     int[][] worldPopulation = {
-                               {1000,1500,2000,2500,3900,3232},
-                               {2200,2500,1200,1400},
-                               {3000,3300,2323,6623,3232},
+                               {1000,1500,2000,},
+                               {2200,2500,1200,},
+                               {3000,3300,2323,},
    
                             };
         
@@ -31,99 +31,83 @@ public class ArrayLorenzoProject {
      System.out.println("worldPopulation[0][0]:"+worldPopulation[0][0]);
      System.out.println("worldPopulation[0][1]:"+worldPopulation[0][1]); 
      System.out.println("worldPopulation[0][2]:"+worldPopulation[0][2]);
-     System.out.println("worldPopulation[0][3]:"+worldPopulation[0][3]);
-     System.out.println("worldPopulation[0][4]:"+worldPopulation[0][4]);
-     System.out.println("worldPopulation[0][5]:"+worldPopulation[0][5]);
+     
+    
      
  
      System.out.println("worldPopulation[1][0]:"+worldPopulation[1][0]);
      System.out.println("worldPopulation[1][1]:"+worldPopulation[1][1]);
      System.out.println("worldPopulation[1][2]:"+worldPopulation[1][2]);
-     System.out.println("worldPopulation[1][3]:"+worldPopulation[1][3]);
+   
      
      System.out.println("worldPopulation[2][0]:"+worldPopulation[2][0]); 
      System.out.println("worldPopulation[2][1]:"+worldPopulation[2][1]);
      System.out.println("worldPopulation[2][2]:"+worldPopulation[2][2]);
-     System.out.println("worldPopulation[2][3]:"+worldPopulation[2][3]);
-     System.out.println("worldPopulation[2][4]:"+worldPopulation[2][4]);
      
-     worldPopulation[0][0]=8000;
-     worldPopulation[0][1]=8999;
-     worldPopulation[0][2]=7878;
-     worldPopulation[0][3]=9990;
-     worldPopulation[0][4]=9898;
-     worldPopulation[0][5]=6777;
-     
-     worldPopulation[1][0]=7777;
-     worldPopulation[1][1]=6666;
-     worldPopulation[1][2]=6868;
-     worldPopulation[1][3]=9222;
-     
-     worldPopulation[2][0]=10323;
-     worldPopulation[2][1]=10500;
-     worldPopulation[2][2]=50500;
-     worldPopulation[2][3]=26666;
-     worldPopulation[2][4]=89786;
+   
+   
     
-     System.out.println("after 2 years RE reading ");
-     System.out.println("just watch");
-     System.out.println(" L  ");      
-     System.out.println(" 0  ");
-     System.out.println(" V ");
-     System.out.println(" E");
-     System.out.println("");
-     
-     System.out.println("worldPopulation[0][0]:"+worldPopulation[0][0]);
-     System.out.println("worldPopulation[0][1]:"+worldPopulation[0][1]); 
-     System.out.println("worldPopulation[0][2]:"+worldPopulation[0][2]);
-     System.out.println("worldPopulation[0][3]:"+worldPopulation[0][3]);
-     System.out.println("worldPopulation[0][4]:"+worldPopulation[0][4]);
-     System.out.println("worldPopulation[0][5]:"+worldPopulation[0][5]);
-     
-     System.out.println("worldPopulation[1][0]:"+worldPopulation[1][0]);
-     System.out.println("worldPopulation[1][1]:"+worldPopulation[1][1]);
-     System.out.println("worldPopulation[1][2]:"+worldPopulation[1][2]);
-     System.out.println("worldPopulation[1][3]:"+worldPopulation[1][3]);
-     
-     System.out.println("worldPopulation[2][0]:"+worldPopulation[2][0]); 
-     System.out.println("worldPopulation[2][1]:"+worldPopulation[2][1]);
-     System.out.println("worldPopulation[2][2]:"+worldPopulation[2][2]);
-     System.out.println("worldPopulation[2][3]:"+worldPopulation[2][3]);
-     System.out.println("worldPopulation[2][4]:"+worldPopulation[2][4]);
-     
+   int rowTotal=0;
     
+    for(int i=0; i<worldPopulation.length; i++){
+      rowTotal += worldPopulation[2][i];  
+    }
+   
     
+    int total = sum(worldPopulation);
+    System.out.println("the total worldPopulation is"   +total);
+    System.out.println("ang average diay sa worldPopulation kay"  );
+    System.out.println(total/9.0);
+    System.out.println("Pag ka uso sa corona Viruz nahimunalang ug"  );
+    System.out.println(total+10000);
+    System.out.println("Pagka Shutdown sa ABS CBN ");
+    System.out.println(total-19000);
+    System.out.println("Pagkamatay ni CArdo dalisay kay");
+    System.out.println(total-100000);
+    }
     
+    public static int sum(int[][]values){
+    int total=0;
+    for(int i = 0; i<values.length; i++){
+   
+    for(int j=0;j< values.length; j++){
+        total += values[i][j];
     
+         }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    }
+    return total;
     
     }
     
-}
+    
+}    
+
+     
+     
+     
+     
+     
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
